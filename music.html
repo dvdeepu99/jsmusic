@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="side.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/445afdcba0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="icons/eminem.jpg" class="songimg">
+            <h1>Stan</h1>
+            <p>Eminem ft. Dido</p>
+
+            <audio id="song">
+                <source src="assets/music.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward-step"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
+                <div><i class="fa-solid fa-forward-step"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="player.js"></script>
+</body>
+</html>
